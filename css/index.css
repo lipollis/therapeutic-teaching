@@ -1,0 +1,53 @@
+
+
+/*    #######   CARD   #######         */
+.container-home{
+    /*margin: 0 auto;*/
+    padding-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 100%;
+}
+
+/*    #######   CARD   #######         */
+
+
+
+
+/*    #######   IMAGEM   #######         */
+
+
+.ls_logo{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 15rem;
+}
+
+
+/*    #######   TÍTULO E TEXTO DO CARD   #######         */
+     
+
+
+
+/*    #######   RESPONSIVIDADE   #######         */
+
+@media (max-width: 700px) {
+
+
+  }
+  
+  @media only screen and (min-width: 700px) and (max-width: 1024px) {
+
+  }
+  
+  @media (min-aspect-ratio: 1025px) {
+    
+
+  }
+  @media only screen and (min-width: 1200px) {
+      
+  }
