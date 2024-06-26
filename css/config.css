@@ -30,6 +30,7 @@ html, body {
     font-family: 'Glacial Indifference', sans-serif;                            
     max-width: 100%;
     max-height: 100%;
+    box-sizing: border-box;
 }
 
 /* ====================================

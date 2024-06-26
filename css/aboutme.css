@@ -1,19 +1,79 @@
-/*    #######   CARD   #######         */
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+  box-sizing: border-box;
+}
 
 
-/*    #######   CARD   #######         */
+.home{
+    padding-top: 3rem;
+    height: 100vh;
+    background-image: url('/img/background-aboutme.png');
+    background-size: contain;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* ====================================
+        CAROUSEL
+=======================================*/
+
+#carouselExampleCaptions,
+.carousel-indicators,
+.carousel-inner,
+.carousel-item,
+.carousel-caption,
+.text-aboutme,
+.img-slide-2,
+.text-aboutme-down,
+.img-aboutme,
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background-color: transparent;
+}
+
+.carousel{
+  display: flex;
+}
+.carousel-item{
+  padding: 5%;
+}
+.carousel-caption{
+  width: 40%;
+  top: 50px;
+}
+.img-slide-2{
+  display: grid;
+  float: right;
+  align-items: center;
+}
+.text-aboutme{
+  width: 100%;
+  text-align: justify;
+  float: left;
+  font-family: 'Glacial Indifference', sans-serif;
+  color: var(--cor-text);
+}
+.text-aboutme-down{
+  width: 60%;
+  float: right;
+  text-align: center;
+  font-family: 'Glacial Indifference', sans-serif;
+  color: var(--cor-text);
+  margin: 0 auto;
+}
+.img-aboutme{
+  float: right;
+  top: 50px;
+  padding: 1rem;
+}
 
 
 
-/*    #######   IMAGEM   #######         */
-
-
-
-/*    #######   TÍTULO E TEXTO DO CARD   #######         */
-
-
-
-/*    #######   RESPONSIVIDADE   #######         */
+/* ====================================
+        RESPONSIVIDADE
+=======================================*/
 
 @media (max-width: 700px) {
     
