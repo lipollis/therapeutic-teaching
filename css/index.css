@@ -1,20 +1,67 @@
-
-
-/*    #######   CARD   #######         */
-.container-home{
-    /*margin: 0 auto;*/
-    padding-top: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 100%;
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-/*    #######   CARD   #######         */
+
+.home{
+    /*margin: 0 auto;*/
+    padding-top: 3rem;
+    height: 100%;
+}
 
 
+/* ====================================
+        TÍTULO
+=======================================*/
+
+.content-logo{
+    display: flex;
+    margin-left: 7rem;
+    grid-template-columns: 5% 40%  50%;
+	grid-template-rows: auto auto;
+}
+
+.h1-logo{
+    width: 4rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+h1{
+	color: var(--cor-text);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 20px;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.h1-index{
+    margin-left: 0.5rem;
+    font-weight: 300;
+}
+
+h4{
+	color: var(--cor-title);
+    padding-bottom: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 17px;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.h4-index{
+    margin-left: 5rem;
+    letter-spacing: 0.5rem;
+}
 
 
-/*    #######   IMAGEM   #######         */
+/* ====================================
+        IMAGEM - FOTO
+=======================================*/
 
 
 .ls_logo{
@@ -27,17 +74,119 @@
     width: 15rem;
 }
 
+.container-foto{
+    /* filter: blur(25px); */
+    position: relative;
+    display: flex;
+    float: right;
+    align-items: center;
+    padding-bottom: 2rem;
+    overflow: hidden;
+}
+.ls_moldura{
+    z-index: 0;
+    background-color: transparent;
+}
 
-/*    #######   TÍTULO E TEXTO DO CARD   #######         */
-     
+.ls_foto{
+    position: absolute;
+    z-index: 0;
+    background-color: transparent;
+    /* right: -100px; */
+    /* top: 90px; */
+    transform: translateX(25%);
+}
 
+/* ====================================
+        CORPO
+=======================================*/
 
+.content-text-index{
+    margin-left: 12rem;
+    margin-top: 2rem;
+}
 
-/*    #######   RESPONSIVIDADE   #######         */
+p{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+}
+.item-text-index-1{
+    width: 400px;
+    margin: 0px 0px 0px;
+    font-weight: 600;
+    color: var(--cor-text);
+    letter-spacing: 0.3rem;
+}
+
+.item-text-index-2{
+    width: 400px;
+    font-weight: 600;
+    color: var(--cor-title);
+    align-items: center;
+}
+
+.item-text-index-3{
+    width: 400px;
+    margin: 0px 0px 16px;
+    font-weight: 600;
+    color: var(--cor-text);
+}
+
+.item-text-index-4{
+    width: 400px;
+    margin: 0px 0px 16px;
+    font-weight: 500;
+    color: var(--cor-text);
+}
+
+.item-text-index-5{
+    width: 400px;
+    margin: 0px 0px 24px;
+    font-weight: 600;
+    color: var(--cor-text);
+}
+/* ====================================
+        RESPONSIVIDADE
+=======================================*/
+
+@media (min-width: 360px) {
+    .ls_foto{
+        top: 90px;
+    }
+
+}
 
 @media (max-width: 700px) {
+    .ls_logo{
+        width: 8rem;
+    }
+    .ls_moldura{
+        width: 20rem;
+    }
+    .ls_foto{
+        width: 20rem;
+        top: 70px;
+    }
 
+    .h4-index{
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+    .content-logo{
+        margin-left: 2rem;
+        padding-left: 2rem;
+    }
+    .content-text-index{
+        margin-left: 2rem;
+        padding-left: 2rem;
+        padding-right: 1rem;
+    }
 
+    p{
+        font-size: 15px;
+    }
   }
   
   @media only screen and (min-width: 700px) and (max-width: 1024px) {
