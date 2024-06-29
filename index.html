@@ -32,7 +32,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="topo" onclick="alert(window.innerHeight)">
         <!-- NAVBAR -->
         <section className='menu '>
             <nav class='navbar navbar-expand-lg'>
@@ -89,27 +89,32 @@
                 </div>
             </nav>
         </section>
+
+
+
+    </header>
+    <!-- BODY -->
+    <main id="conteudo" class='home' >
         <!-- LOGO -->
         <section class="logo">
             <div class="plogo" id="logo">
                 <img class='justify-content-center ls_logo' src="./img/ls_logo.png" alt="ls_logo imagem" />
             </div>
-
+        
         </section>
+        <section class="box">
 
-
-    </header>
-    <!-- BODY -->
-    <main class='home'>
-        <div>
             <div class="container-foto">
-                <img class='justify-content-center ls_moldura' src="./img/moldura.png" alt="moldura para foto" />
-                <img class='justify-content-center ls_foto' src="./img/foto.png" alt="foto" />
+                <img class='justify-content-center img-index' src="./img/img-index.png" alt="foto" />
             </div>
             <h4 class="h4-index">LANGUAGE SOLUTIONS</h4>
             <div class="content-logo">
-                <div class="item-logo-img"><img class="h1-logo" src="./img/logo.png" alt="logo"></div>
-                <div class="item-logo-h1"><h1 class="h1-index">THERAPEUTIC TEACHING</h1></div>
+                <!-- <div class="item-logo-img"> -->
+                    <img class="h1-logo" src="./img/logo.png" alt="logo">
+                <!-- </div> -->
+                <!-- <div class="item-logo-h1"> -->
+                    <h1 class="h1-index">THERAPEUTIC TEACHING</h1>
+                <!-- </div> -->
             </div>
             
             <div class="content-text-index">
@@ -127,13 +132,13 @@
                 <p class="item-text-index-5">Qual o seu maior desafio atualmente?</p>
             </div>
 
-        </div>
+        </section>
         
 
 
     </main>
     <!-- FOOTER -->
-    <div class="footerComponent py-3">
+    <div id="rodape" class="footerComponent py-3">
 
         <footer class='footer-copyright text-center'>
 

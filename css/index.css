@@ -6,12 +6,6 @@
 }
 
 
-.home{
-    /*margin: 0 auto;*/
-    padding-top: 3rem;
-    height: 100%;
-}
-
 
 /* ====================================
         TÍTULO
@@ -25,7 +19,8 @@
 }
 
 .h1-logo{
-    width: 4rem;
+    width: 64px;
+    height: 45px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
@@ -84,18 +79,12 @@ h4{
     padding-bottom: 2rem;
     overflow: hidden;
 }
-.ls_moldura{
-    z-index: 0;
-    background-color: transparent;
-}
 
-.ls_foto{
-    position: absolute;
-    z-index: 0;
+.img-index{
     background-color: transparent;
     /* right: -100px; */
     /* top: 90px; */
-    transform: translateX(25%);
+    transform: translateX(0%);
 }
 
 /* ====================================
@@ -112,6 +101,7 @@ p{
     font-optical-sizing: auto;
     font-style: normal;
     font-size: 18px;
+    background-color: transparent;
 }
 .item-text-index-1{
     width: 400px;
@@ -152,11 +142,32 @@ p{
         RESPONSIVIDADE
 =======================================*/
 
-@media (min-width: 360px) {
-    .ls_foto{
-        top: 90px;
-    }
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+    p{ font-size: 10px; }
 
+    .item-text-index-1,
+    .item-text-index-2,
+    .item-text-index-3,
+    .item-text-index-4,
+    .item-text-index-5{
+        width: 200px;
+    }
+}
+
+@media (min-width: 360px) {
+    .ls_foto{ top: 90px; }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 600px) {
+    p{ font-size: 12px; }
+
+    .item-text-index-1,
+    .item-text-index-2,
+    .item-text-index-3,
+    .item-text-index-4,
+    .item-text-index-5{
+        width: 300px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -191,7 +202,28 @@ p{
   }
   
   @media only screen and (min-width: 700px) and (max-width: 1024px) {
-
+    .content-logo{ margin-left: 5rem; }
+    .h1-logo{
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    
+    h1{ font-weight: 18px; }
+    
+    .h1-index{ margin-left: 0.2rem; }
+    
+    h4{ font-weight: 14px; }
+    
+    .h4-index{
+        margin-left: 2rem;
+        letter-spacing: 0.2rem;
+    }
+    
+    .content-text-index{
+        margin-left: 5rem;
+        margin-top: 2rem;
+    }
+    
   }
   
   @media (min-aspect-ratio: 1025px) {

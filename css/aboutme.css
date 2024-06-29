@@ -6,14 +6,14 @@
 }
 
 
-.home{
+/* .home{
     padding-top: 3rem;
     height: 100vh;
     background-image: url('/img/background-aboutme.png');
     background-size: contain;
     margin: 0 auto;
     align-items: center;
-}
+} */
 
 /* ====================================
         CAROUSEL
@@ -33,6 +33,20 @@
   background-color: transparent;
 }
 
+div.carousel-item.active{
+  height: 80vh;
+}
+
+.carousel-indicators [data-bs-target] {
+  background: var(--cor-title) !important;
+  background-clip: padding-box !important;
+  transition: opacity .30s ease !important;
+}
+
+span.carousel-control-prev-icon,
+span.carousel-control-next-icon{
+  background-color: var(--cor-title);
+}
 .carousel{
   display: flex;
 }
@@ -50,6 +64,7 @@
 }
 .text-aboutme{
   width: 100%;
+  padding-top: 3rem;
   text-align: justify;
   float: left;
   font-family: 'Glacial Indifference', sans-serif;
@@ -69,19 +84,84 @@
   padding: 1rem;
 }
 
+h4.text-aboutme-h4{
+	color: var(--cor-title);
+  padding-top: 5rem;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 36px;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  letter-spacing: 0.3rem;
+}
 
-
+.img-aboutme-last{
+  width: 380px;
+  float: right;
+  margin-right: 3rem;
+}
 /* ====================================
         RESPONSIVIDADE
 =======================================*/
 
-@media (max-width: 700px) {
-    
+/* @media only screen and (min-width: 350px) and (max-width: 800px){
+  img.img-aboutme{
+    width: 70%;
+    padding: 10px 10px 0;
+    margin: 0 auto;
+  }
+} */
 
+@media (max-width: 800px) {
+    img.img-aboutme{
+      padding: 50px 0 0;
+      background: #fff;
+      opacity: 0.7;
+      filter: opacity(40%);
+      mix-blend-mode: multiply;
+      z-index: -1;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    div.carousel-caption.d-none.d-md-block{
+      display: inline-block !important;
+      width: 70%;
+    }
+    .text-aboutme{
+      z-index: 1;
+    }
+
+    .img-slide-2{
+      display:table-column;
+    }
+    .text-aboutme-down{
+      padding-top: 300px;
+    }
+
+    .img-aboutme-last{
+      padding-top: 350px;
+      width: 80%;
+      margin: 0 auto;
+      align-items: center;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
   }
   
   @media only screen and (min-width: 700px) and (max-width: 1024px) {
-    
+    .carousel-caption{
+      width: 30%;
+      top: 50px;
+    }
+    .img-aboutme{
+      padding: 50px 0 0;
+      float: right;
+      top: 50px;
+      padding: 1rem;
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
   }
   
   @media (min-aspect-ratio: 1025px) {
